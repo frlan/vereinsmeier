@@ -8,7 +8,6 @@ CREATE TABLE hacker (
     vorname character varying(100)
 );
 
-
 ALTER TABLE public.hacker OWNER TO postgres;
 
 CREATE SEQUENCE hacker_id_seq
