@@ -7,7 +7,7 @@ CREATE TABLE fee (
 	extra_fee money,
 	valid_from date,
 	valid_to date,
-	payment_period integer,
+	payment_period integer CHECK (payment_period > 1),
 	deleted boolean,
     created_ts date,
     updated_ts date,

@@ -1,3 +1,4 @@
+DROP TABLE fee_groups;
 --
 -- Name: fee_groups; Type: TABLE; Schema: public; Owner: postgres; Tablespace: 
 --
@@ -5,7 +6,7 @@
 CREATE TABLE fee_groups (
     id integer NOT NULL,
     role_name character varying(50),
-    fee money,
+    fee money CHECK (fee >= 0::money),
     created_ts date,
     updated_ts date,
     deleted_ts date,
