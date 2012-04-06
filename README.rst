@@ -4,7 +4,7 @@ Vereinsmeier
 About
 =====
 
-A little piece of software to fill a feeled whole inside free
+A little piece of software to fill up a feeled whole inside free 
 software for administrating German Verein.
 
 Features
