@@ -6,7 +6,6 @@ CREATE TABLE entry (
 	ref1 varchar(255),
 	ref2 varchar(255),
 	entry_date date,
-	hacker integer, 
 	comment varchar(255),
 	deleted boolean,
     created_ts date,
