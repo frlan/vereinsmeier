@@ -33,3 +33,6 @@ ALTER TABLE public.fee_groups_id_seq OWNER TO postgres;
 --
 
 ALTER SEQUENCE fee_groups_id_seq OWNED BY fee_groups.id;
+
+ALTER TABLE ONLY fee_groups
+    ADD CONSTRAINT fee_groups_id PRIMARY KEY (id);

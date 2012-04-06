@@ -14,3 +14,5 @@ CREATE TABLE entry (
     deleted_ts date
 );
 	
+ALTER TABLE ONLY entry
+    ADD CONSTRAINT entry_id PRIMARY KEY (id);
