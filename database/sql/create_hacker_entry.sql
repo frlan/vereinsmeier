@@ -4,8 +4,8 @@ DROP TABLE hacker_entry;
 
 CREATE TABLE hacker_entry (
 	id SERIAL NOT NULL, 
-	hacker_id integer, 
-	entry_id integer
+	hacker_id integer REFERENCES hacker, 
+	entry_id integer REFERENCES entry
 );
 
 ALTER TABLE ONLY hacker_entry
