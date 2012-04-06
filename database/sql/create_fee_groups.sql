@@ -1,7 +1,4 @@
 DROP TABLE fee_groups;
---
--- Name: fee_groups; Type: TABLE; Schema: public; Owner: postgres; Tablespace: 
---
 
 CREATE TABLE fee_groups (
     id integer NOT NULL,
@@ -36,10 +33,3 @@ ALTER TABLE public.fee_groups_id_seq OWNER TO postgres;
 --
 
 ALTER SEQUENCE fee_groups_id_seq OWNED BY fee_groups.id;
-
-
---
--- Name: fee_groups_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
---
-
-SELECT pg_catalog.setval('fee_groups_id_seq', 2, true);
