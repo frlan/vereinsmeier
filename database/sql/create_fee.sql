@@ -1,7 +1,7 @@
 DROP TABLE fee;
 
 CREATE TABLE fee (
-	id serial NOT NULL,
+	id serial PRIMARY KEY,
 	hacker integer REFERENCES hacker, 
 	fee_group integer REFERENCES fee_groups,
 	extra_fee money CHECK ("extra_fee" >= 0::money),
@@ -13,6 +13,3 @@ CREATE TABLE fee (
     updated_ts date,
     deleted_ts date
 );
-
-ALTER TABLE ONLY fee
-    ADD CONSTRAINT fee_id PRIMARY KEY (id);

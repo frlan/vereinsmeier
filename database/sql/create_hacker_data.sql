@@ -1,7 +1,7 @@
 DROP TABLE hacker_data;
 
 CREATE TABLE hacker_data (
-	id serial NOT NULL,
+	id serial PRIMARY KEY,
 	hacker integer REFERENCES hacker,
 	name character varying(100),
     vorname character varying(100),
@@ -10,6 +10,3 @@ CREATE TABLE hacker_data (
     updated_ts date,
     deleted_ts date
 );
-
-ALTER TABLE ONLY hacker_data
-    ADD CONSTRAINT hacker_data_id PRIMARY KEY (id);

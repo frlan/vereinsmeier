@@ -1,7 +1,7 @@
 DROP TABLE entry;
 
 CREATE TABLE entry (
-	id SERIAL NOT NULL,
+	id SERIAL PRIMARY KEY,
 	value money,
 	ref1 varchar(255),
 	ref2 varchar(255),
@@ -13,6 +13,3 @@ CREATE TABLE entry (
     updated_ts date,
     deleted_ts date
 );
-	
-ALTER TABLE ONLY entry
-    ADD CONSTRAINT entry_id PRIMARY KEY (id);
