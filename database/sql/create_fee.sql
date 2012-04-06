@@ -4,7 +4,7 @@ CREATE TABLE fee (
 	id serial NOT NULL,
 	hacker integer, 
 	fee_group integer,
-	extra_fee money (extra_fee >= 0::money),
+	extra_fee money CHECK ("extra_fee" >= 0::money),
 	valid_from date,
 	valid_to date,
 	payment_period integer CHECK (payment_period >= 1),
