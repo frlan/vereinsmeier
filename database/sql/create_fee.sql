@@ -4,7 +4,7 @@ CREATE TABLE fee (
 	id serial PRIMARY KEY,
 	hacker integer REFERENCES hacker, 
 	fee_group integer REFERENCES fee_groups,
-	extra_fee money CHECK ("extra_fee" >= 0::money),
+	extra_fee money CHECK (extra_fee >= 0::money),
 	valid_from date,
 	valid_to date,
 	payment_period integer CHECK (payment_period >= 1),
