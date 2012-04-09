@@ -22,6 +22,8 @@ It's build against Postgres 9.1 and it is untested on other versions
 of PostgreSQL as well as on other DBMS. Eventhough very basic and 
 non-fancy SQL has been used, it cannot be assured it will work. 
 
+Also postgres-plpython will be needed. 
+
 
 License
 =======
