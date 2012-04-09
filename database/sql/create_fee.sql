@@ -11,5 +11,6 @@ CREATE TABLE fee (
 	deleted boolean,
     created_ts date,
     updated_ts date,
-    deleted_ts date
+    deleted_ts date,
+    CHECK (valid_from <= valid_to)
 );
