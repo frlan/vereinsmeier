@@ -4,7 +4,7 @@ DROP TABLE hacker_entry;
 
 CREATE TABLE hacker_entry (
 	id SERIAL PRIMARY KEY, 
-	hacker_id integer REFERENCES hacker, 
-	entry_id integer REFERENCES entry
+	hacker_id integer REFERENCES hacker ON DELETE CASCADE, 
+	entry_id integer REFERENCES entry ON DELETE CASCADE
 );
 

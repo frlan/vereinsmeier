@@ -2,7 +2,7 @@ DROP TABLE fee;
 
 CREATE TABLE fee (
 	id serial PRIMARY KEY,
-	hacker integer REFERENCES hacker, 
+	hacker integer REFERENCES hacker ON DELETE CASCADE, 
 	fee_group integer REFERENCES fee_groups,
 	extra_fee money CHECK (extra_fee >= 0::money),
 	valid_from date,
