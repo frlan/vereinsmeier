@@ -7,7 +7,7 @@ CREATE TABLE entry (
 	ref2 varchar(255),
 	entry_date date,
 	comment varchar(255),
-	deleted boolean,
+	deleted boolean DEFAULT false,
     created_ts date,
     updated_ts date,
     deleted_ts date

@@ -5,7 +5,7 @@ CREATE TABLE hacker_data (
 	hacker integer REFERENCES hacker ON DELETE CASCADE,
 	name character varying(100),
     vorname character varying(100),
-    deleted boolean,
+    deleted boolean DEFAULT false,
     created_ts date,
     updated_ts date,
     deleted_ts date

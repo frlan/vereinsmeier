@@ -6,7 +6,7 @@ CREATE TABLE fee_groups (
     fee money CHECK (fee >= 0::money),
     valid_from date,
     valid_to date,
-    deleted boolean,
+    deleted boolean DEFAULT false,
     created_ts date,
     updated_ts date,
     deleted_ts date

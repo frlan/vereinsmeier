@@ -8,7 +8,7 @@ CREATE TABLE fee (
 	valid_from date NOT NULL,
 	valid_to date NOT NULL,
 	payment_period integer CHECK (payment_period >= 1),
-	deleted boolean,
+	deleted boolean DEFAULT false,
     created_ts date,
     updated_ts date,
     deleted_ts date,
