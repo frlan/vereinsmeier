@@ -7,7 +7,7 @@ CREATE TABLE fee_groups (
     valid_from date,
     valid_to date,
     deleted boolean DEFAULT false,
-    created_ts date DEFAULT now(),
-    updated_ts date,
-    deleted_ts date
+    created_ts timestamp DEFAULT now(),
+    updated_ts timestamp,
+    deleted_ts timestamp
 );

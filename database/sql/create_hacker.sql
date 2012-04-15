@@ -5,7 +5,7 @@ CREATE TABLE hacker (
     member_since date NOT NULL,
     member_till date CHECK(member_till >= member_since),
     deleted boolean DEFAULT false,
-    created_ts date DEFAULT now(),
-    updated_ts date,
-    deleted_ts date
+    created_ts timestamp DEFAULT now(),
+    updated_ts timestamp,
+    deleted_ts timestamp
 );

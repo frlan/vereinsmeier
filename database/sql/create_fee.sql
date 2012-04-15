@@ -9,8 +9,8 @@ CREATE TABLE fee (
     valid_to date,
     payment_period integer CHECK (payment_period >= 1),
     deleted boolean DEFAULT false,
-    created_ts date DEFAULT now(),
-    updated_ts date,
-    deleted_ts date,
+    created_ts timestamp DEFAULT now(),
+    updated_ts timestamp,
+    deleted_ts timestamp,
     CHECK (valid_from <= valid_to)
 );
