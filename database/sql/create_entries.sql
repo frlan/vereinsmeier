@@ -1,6 +1,6 @@
-DROP TABLE entry;
+DROP TABLE entries;
 
-CREATE TABLE entry (
+CREATE TABLE entries (
     id SERIAL PRIMARY KEY,
     value money,
     ref1 varchar(255),
