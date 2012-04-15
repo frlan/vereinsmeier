@@ -6,7 +6,7 @@ CREATE TABLE hacker_data (
 	name character varying(100),
     vorname character varying(100),
     deleted boolean DEFAULT false,
-    created_ts date,
+    created_ts date DEFAULT now(),
     updated_ts date,
     deleted_ts date
 );

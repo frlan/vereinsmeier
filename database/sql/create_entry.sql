@@ -8,7 +8,7 @@ CREATE TABLE entry (
     entry_date date,
     comment varchar(255),
     deleted boolean DEFAULT false,
-    created_ts date,
+    created_ts date DEFAULT now(),
     updated_ts date,
     deleted_ts date
 );
