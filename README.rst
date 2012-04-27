@@ -4,8 +4,8 @@ Vereinsmeier
 About
 =====
 
-A little piece of software to fill up a feeled whole inside free 
-software for administrating German Verein.
+A little piece of software to fill up a gap caused by a missing feature
+at administrating German Verein.
 
 Features
 ========
@@ -18,11 +18,11 @@ Features
 Dependencies
 ============
 
-It's build against Postgres 9.1 and it is untested on other versions 
-of PostgreSQL as well as on other DBMS. Eventhough very basic and 
-non-fancy SQL has been used, it cannot be assured it will work. 
+It's build against Postgres 9.1 and it is untested on other versions
+of PostgreSQL as well as on other DBMS. Eventhough very basic and
+non-fancy SQL has been used, it cannot be assured it will work.
 
-Also postgres-plpython will be needed. 
+Also postgres-plpython will be needed.
 
 
 License
