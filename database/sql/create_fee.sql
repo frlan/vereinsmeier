@@ -7,7 +7,6 @@ CREATE TABLE fee (
     extra_fee money DEFAULT 0 CHECK (extra_fee >= 0::money),
     valid_from date NOT NULL,
     valid_to date,
-    payment_period integer CHECK (payment_period >= 1),
     deleted boolean DEFAULT false,
     created_ts timestamp DEFAULT now(),
     updated_ts timestamp,
