@@ -4,7 +4,7 @@ CREATE TABLE accounting_items (
     id SERIAL PRIMARY KEY,
     hacker_id integer REFERENCES hacker ON DELETE CASCADE,
     booking_date date,
-    value money,
+    amount money,
     description varchar(255),
     comment varchar(255),
     deleted boolean DEFAULT false,
