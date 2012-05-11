@@ -2,10 +2,10 @@ DROP TABLE entries;
 
 CREATE TABLE entries (
     id SERIAL PRIMARY KEY,
+    hacker_id integer REFERENCES hacker ON DELETE CASCADE,
+    booking_date date,
     value money,
-    ref1 varchar(255),
-    ref2 varchar(255),
-    entry_date date,
+    description varchar(255),
     comment varchar(255),
     deleted boolean DEFAULT false,
     created_ts timestamp DEFAULT now(),
