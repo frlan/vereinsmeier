@@ -1,6 +1,6 @@
-DROP TABLE entries;
+DROP TABLE accounting_items;
 
-CREATE TABLE entries (
+CREATE TABLE accounting_items (
     id SERIAL PRIMARY KEY,
     hacker_id integer REFERENCES hacker ON DELETE CASCADE,
     booking_date date,
