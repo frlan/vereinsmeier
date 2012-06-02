@@ -3,7 +3,7 @@ DROP TABLE accounting_items;
 CREATE TABLE accounting_items (
     id SERIAL PRIMARY KEY,
     hacker_id integer REFERENCES hacker ON DELETE CASCADE,
-    booking_date date NOT NULL,
+    booking_date date NOT NULL DEFAULT now(),
     amount money NOT NULL,
     description varchar(255),
     comment varchar(255),
