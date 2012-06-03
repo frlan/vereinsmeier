@@ -13,6 +13,7 @@ createlang -U postgres -h 127.0.0.1 plpythonu vereinsmeier
 
 # Adding functions...
 psql -f ../sql/create_func_period_amount.sql -U postgres -h 127.0.0.1 vereinsmeier
+psql -f ../sql/create_func_inserting_fee_accouting_items.sql -U postgres -h 127.0.0.1 vereinsmeier
 
 # Adding views
 psql -f ../sql/create_views.sql -U postgres -h 127.0.0.1 vereinsmeier
