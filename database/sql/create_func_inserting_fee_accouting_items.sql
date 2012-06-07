@@ -23,7 +23,7 @@ $BODY$
 		SELECT 
 			hackerid as "hacker_id", 
 			cutoffday as "booking_date", 
-			amount as "amount",
+			amount * -1 as "amount",
 			$1 as description,
 			$2 as comment
 		FROM period_amount($3);""", ["text","text","date"])
